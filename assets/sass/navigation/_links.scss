@@ -1,0 +1,68 @@
+#main-nav, #main-nav-dsk {
+  .menu-item {
+    a {
+      position: relative;
+      display: inline-block;
+
+      &::after {
+        content: '';
+        display: block;
+        margin: auto;
+        height: 0.2rem;
+        width: 0;
+        background: transparent;
+        border-radius: 20px;
+        transition: width .4s ease, background-color .4s ease;
+      }
+
+      &:hover {
+        &::after {
+          width: 60%;
+          background: $vert;
+        }
+      }
+    }
+  }
+
+  .current-menu-item {
+    a {
+      &::after {
+        content: '';
+        display: block;
+        margin: auto;
+        height: 0.2rem;
+        width: 60%;
+        background: $vert;
+        border-radius: 20px;
+        transition: width .4s ease, background-color .4s ease;
+      }
+    }
+  }
+}
+
+footer {
+  .copyright {
+    a {
+      position: relative;
+      display: inline-block;
+
+      &::after {
+        content: '';
+        display: block;
+        margin: auto;
+        height: 0.2rem;
+        width: 0;
+        background: transparent;
+        border-radius: 20px;
+        transition: width .4s ease, background-color .4s ease;
+      }
+
+      &:hover {
+        &::after {
+          width: 60%;
+          background: $vert;
+        }
+      }
+    }
+  }
+}

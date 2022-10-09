@@ -1,0 +1,23 @@
+.partenaires_slider {
+  .splide__pagination {
+    .splide__pagination__page {
+      background: transparent;
+      border: 2px solid $vert;
+    }
+    .splide__pagination__page.is-active {
+      background: $vert;
+    }
+  }
+}
+
+.modpacks_slider {
+  .splide__pagination {
+    .splide__pagination__page {
+      background: transparent;
+      border: 2px solid $tertiaire;
+    }
+    .splide__pagination__page.is-active {
+      background: $tertiaire;
+    }
+  }
+}

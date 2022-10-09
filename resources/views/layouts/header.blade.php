@@ -2,7 +2,7 @@
   <nav class="bg-primary px-8 lg:px-6 py-4">
     <div class="hidden lg:flex flex-wrap xl:flex-row flex-col justify-between items-center mx-auto max-w-screen-2xl">
       <a href="{{ get_home_url() }}" class="flex items-center">
-          <img loading="lazy" class="mr-3 h-32 rounded-full transition_primary hover:rotate-45" src="{{ wp_get_attachment_image_src(get_theme_mod('custom_logo'))[0] }}" alt="{{ get_bloginfo('name') }} - {{ get_bloginfo('description') }}">
+          <img loading="lazy" class="mr-3 h-32 rounded-full outline outline-vert transition_primary hover:rotate-45" src="{{ wp_get_attachment_image_src(get_theme_mod('custom_logo'))[0] }}" alt="{{ get_bloginfo('name') }} - {{ get_bloginfo('description') }}">
       </a>
       <div class="hidden lg:flex items-center lg:order-2 pt-8 xl:pt-0">
           <a href="/contact/" class="btn_youtube py-1 mx-2">Youtube</a>

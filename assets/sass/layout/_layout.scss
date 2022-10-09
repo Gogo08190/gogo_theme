@@ -29,3 +29,34 @@ html, body {
     background-color: $secondary;
     color: $white;
 }
+
+::-webkit-scrollbar{
+    height: 10px;
+    width: 10px;
+    background: $primary;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $tertiaire;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $vert;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $vert;
+}
+
+::-webkit-scrollbar-thumb:horizontal{
+    background: $primary;
+    border-radius: 10px;
+}
+
+:root{
+  scrollbar-color: $vert #f1f1f1 !important;
+  scrollbar-width: thin !important;
+}

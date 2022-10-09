@@ -13,6 +13,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        background:{
+          DEFAULT: '#212121'
+        },
         primary:{
           DEFAULT: '#130C37'
         },
@@ -24,6 +27,15 @@ module.exports = {
         },
         vert:{
           DEFAULT: '#C2F24D'
+        },
+        discord:{
+          DEFAULT: '#5865F2'
+        },
+        youtube:{
+          DEFAULT: '#FF0000'
+        },
+        twitch:{
+          DEFAULT: '#8205B4'
         },
       },
       fontFamily: {

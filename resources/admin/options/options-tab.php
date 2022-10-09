@@ -19,5 +19,6 @@ $page->addSettings([
       Field::text('twitter', ['label' => 'Twitter']),
       Field::text('youtube', ['label' => 'YouTube']),
       Field::text('twitch', ['label' => 'Twitch']),
+      Field::text('discord', ['label' => 'Discord']),
     ]
 ]);

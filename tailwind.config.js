@@ -37,6 +37,12 @@ module.exports = {
         twitch:{
           DEFAULT: '#8205B4'
         },
+        twitter:{
+          DEFAULT: '#1DA1F2'
+        },
+        github:{
+          DEFAULT: '#333'
+        },
       },
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],

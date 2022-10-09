@@ -1507,6 +1507,16 @@ input:checked + .toggle-bg {
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
+.bg-tertiaire {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 234 255 / var(--tw-bg-opacity));
+}
+
+.bg-vert {
+  --tw-bg-opacity: 1;
+  background-color: rgb(194 242 77 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -1567,6 +1577,10 @@ input:checked + .toggle-bg {
   padding-right: 1.25rem;
 }
 
+.pt-4 {
+  padding-top: 1rem;
+}
+
 .pt-8 {
   padding-top: 2rem;
 }
@@ -1583,20 +1597,17 @@ input:checked + .toggle-bg {
   padding-top: 0.5rem;
 }
 
-.pt-4 {
-  padding-top: 1rem;
-}
-
 .text-center {
   text-align: center;
 }
 
-.font-montserrat {
-  font-family: Montserrat, sans-serif;
-}
-
 .font-poppins {
   font-family: Poppins, sans-serif;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-base {
@@ -1758,6 +1769,21 @@ input:checked + .toggle-bg {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.hover\:text-youtube:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 0 0 / var(--tw-text-opacity));
+}
+
+.hover\:text-twitch:hover {
+  --tw-text-opacity: 1;
+  color: rgb(130 5 180 / var(--tw-text-opacity));
+}
+
+.hover\:text-discord:hover {
+  --tw-text-opacity: 1;
+  color: rgb(88 101 242 / var(--tw-text-opacity));
+}
+
 .hover\:text-gray-900:hover {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
@@ -1771,6 +1797,16 @@ input:checked + .toggle-bg {
 .hover\:text-gray-600:hover {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.hover\:text-twitter:hover {
+  --tw-text-opacity: 1;
+  color: rgb(29 161 242 / var(--tw-text-opacity));
+}
+
+.hover\:text-github:hover {
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 
 .focus\:outline-none:focus {

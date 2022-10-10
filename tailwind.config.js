@@ -5,7 +5,10 @@ module.exports = {
       "./node_modules/flowbite/**/*.js"
     ],
     safelist:[
-
+      'text_vert',
+      'text-vert',
+      'text-secondary',
+      'text-tertiaire'
     ]
   }
     ,

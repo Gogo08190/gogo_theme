@@ -18,7 +18,7 @@ class Modpacks extends Model
             'post_type' => 'modpacks',
             'post_status' => 'publish',
             'posts_per_page' => -1,
-            'order' => 'ASC'
+            'order' => 'DESC'
         );
 
         $posts = new WP_Query($args);

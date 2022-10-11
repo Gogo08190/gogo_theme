@@ -28,7 +28,7 @@ Metabox::make('modpacks_cp', 'modpacks')
 			Field::media('modpacks_img', ['label' => 'Image']),
 			Field::text('modpacks_version', ['label' => 'Version']),
 			Field::text('modpacks_url', ['label' => 'URL']),
-			Field::choice('modpacks_cat', ['choices' => ['Quest', 'Technologie', 'Magie', 'Exploration', 'Skyblock', 'Expert'], 'multiple' => true]),
+			Field::choice('modpacks_cat', ['choices' => ['Quêtes', 'Technologie', 'Magie', 'Exploration', 'Skyblock', 'Expert'], 'multiple' => true]),
 		]))
 
     ->addTranslation('done', 'Sauvegarde réussie')

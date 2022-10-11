@@ -21,7 +21,7 @@ PostType::make('teams', 'Team', 'Team')
 ])
 ->set();
 
-Metabox::make('teams_cp', 'team')
+Metabox::make('teams_cp', 'teams')
     ->setTitle('Informations')
 
 		->add(new Section('teams_general', 'Informations générales', [

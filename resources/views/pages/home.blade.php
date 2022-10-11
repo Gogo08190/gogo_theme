@@ -43,22 +43,28 @@
     <h2 class="titre_h2 text-white">{!! $team['titre'] !!}</h2>
 
     <div class="grid flex mx-auto gap-8 lg:grid-cols-12 py-8">
+      @foreach($teams['list'] as $teams_item )
       <div class="lg:col-span-6 xl:col-span-3">
         <div class="w-full bg-white rounded-lg shadow-md">
           <div class="flex flex-col items-center py-10">
-              <img class="mb-3 w-36 h-36 rounded-full shadow-lg" src="{{ get_template_directory_uri() }}/dist/images/logo.jpg" alt="Bonnie image"/>
-              <h5 class="mb-1 text-xl font-bold text-primary font-poppins">Gogo08</h5>
-              <span class="text-sm text-primary font-poppins">Youtubeur</span>
+              <img class="mb-3 w-36 h-36 rounded-full shadow-lg transition_primary hover:rotate-45" src="{{ wp_get_attachment_image_src($teams_item['teams_img'], 'teams')[0] }}" alt="{{ $teams_item['title'] }}">
+              <h3 class="mb-1 text-xl font-bold text-primary font-poppins">{!! $teams_item['title'] !!}</h3>
+              <span class="text-sm text-primary font-poppins">{!! $teams_item['teams_fonction'] !!}</span>
               <div class="flex mt-4 space-x-3 md:mt-6">
-                <a href="#" target="_blank"><i class="icon-youtube text-4xl text-primary transition_primary hover:text-youtube mx-1"></i></a>
-                <a href="#" target="_blank"><i class="icon-twitch text-4xl text-primary transition_primary hover:text-twitch mx-1"></i></a>
-                <a href="#" target="_blank"><i class="icon-discord text-4xl text-primary transition_primary hover:text-discord mx-1"></i></a>
-                <a href="#" target="_blank"><i class="icon-twitter text-4xl text-primary transition_primary hover:text-twitter mx-1"></i></a>
-                <a href="#" target="_blank"><i class="icon-github text-4xl text-primary transition_primary hover:text-github mx-1"></i></a>
+                @if($teams_item['teams_youtube'])
+                <a href="{{ $teams_item['teams_youtube'] }}" target="_blank"><i class="icon-youtube text-4xl text-primary transition_primary hover:text-youtube mx-1"></i></a>
+                @endif
+                @if($teams_item['teams_twitch'])
+                <a href="{{ $teams_item['teams_twitch'] }}" target="_blank"><i class="icon-twitch text-4xl text-primary transition_primary hover:text-twitch mx-1"></i></a>
+                @endif
+                @if($teams_item['teams_twitter'])
+                <a href="{{ $teams_item['teams_twitter'] }}" target="_blank"><i class="icon-twitter text-4xl text-primary transition_primary hover:text-twitter mx-1"></i></a>
+                @endif
               </div>
           </div>
         </div>
       </div>
+      @endforeach
     </div>
   </div>
 </section>

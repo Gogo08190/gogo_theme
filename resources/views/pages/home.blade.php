@@ -9,10 +9,10 @@
 <section id="top" class="py-8">
   <div class="container mx-auto">
     <div class="grid flex mx-auto gap-16 lg:grid-cols-12">
-      <div class="lg:col-span-6 my-auto">
-        <img src="{{ get_template_directory_uri() }}/dist/images/portrait.png" loading="lazy" alt="{{ bloginfo('name') }}">
+      <div class="lg:col-span-6 my-auto lg:order-1 order-2">
+        <img class="xl:w-full lg:w-4/5 md:w-3/5 w-3/6 mx-auto" src="{{ get_template_directory_uri() }}/dist/images/portrait.png" loading="lazy" alt="{{ bloginfo('name') }}">
       </div>
-      <div class="lg:col-span-6 my-auto">
+      <div class="lg:col-span-6 my-auto lg:order-2 order-1">
         <h1 class="titre_h1">{!! $top['titre'] !!}</h1>
         <p class="text_primary">{!! $top['desc'] !!}</p>
       </div>
@@ -48,7 +48,7 @@
         <div class="w-full bg-white rounded-lg shadow-md">
           <div class="flex flex-col items-center py-10">
               <img class="mb-3 w-36 h-36 rounded-full shadow-lg transition_primary hover:rotate-45" loading="lazy" src="{{ wp_get_attachment_image_src($teams_item['teams_img'], 'teams')[0] }}" alt="{{ $teams_item['title'] }}">
-              <h3 class="mb-1 text-xl font-bold text-primary font-poppins">{!! $teams_item['title'] !!}</h3>
+              <h3 class="mb-1 xl:text-xl lg:text-lg md:text-base text-sm font-bold text-primary font-poppins">{!! $teams_item['title'] !!}</h3>
               <span class="text-sm text-primary font-poppins">{!! $teams_item['teams_fonction'] !!}</span>
               <div class="flex mt-4 space-x-3 md:mt-6">
                 @if($teams_item['teams_youtube'])
@@ -82,7 +82,7 @@
           </a>
           <div class="p-5">
             <a href="{{ $modpacks_item['modpacks_url'] }}" target="_blank">
-                <h3 class="mb-2 text-2xl font-bold tracking-tight text-primary">{!! $modpacks_item['title'] !!}</h3>
+                <h3 class="mb-2 xl:text-2xl lg:text-xl md:text-lg text-base font-bold tracking-tight text-primary">{!! $modpacks_item['title'] !!}</h3>
             </a>
             <div class="flex items-center mt-2.5 mb-5">
               <span class="bg-tertiaire text-primary text-xs font-semibold mr-2 px-2.5 py-0.5 rounded ml-3">{!! $modpacks_item['modpacks_version'] !!}</span>
@@ -115,24 +115,16 @@
     <div class="splide partenaires_slider py-8" role="group" aria-label="Splide Basic HTML Example">
       <div class="splide__track">
     		<ul class="splide__list">
-    			<li class="splide__slide">
-            <img class="mb-3 mx-auto w-96" loading="lazy" src="{{ get_template_directory_uri() }}/dist/images/bisecthosting.png" alt="BisectHosting"/>
-            <h3 class="text-vert text-center text-3xl font-poppins">BisectHosting</h3>
-            <p class="text-white text-center font-poppins text-xl max-w-5xl mx-auto">BisectHosting propose un hébergement de serveur simple, rapide et de haute qualité avec plus d'une douzaine d'emplacements disponibles à travers le monde, garantissant une faible latence. Après votre achat, le serveur est déjà configuré et prêt à être utilisé.<br><br>
-            Utilisez le code "<strong class="text-vert">CHROMATECH</strong>"pour obtenir 25% de réduction sur votre premier mois en tant que nouveau client pour l'un de leurs serveurs de jeux.</p>
-            <div class="bouton text-center pt-8">
-              <a href="/contact/" target="_blank" class="btn_secondary">Découvrir</a>
-            </div>
-          </li>
-    			<li class="splide__slide">
-            <img class="mb-3 mx-auto w-96" loading="lazy" src="{{ get_template_directory_uri() }}/dist/images/bisecthosting.png" alt="BisectHosting"/>
-            <h3 class="text-vert text-center text-3xl font-poppins">BisectHosting</h3>
-            <p class="text-white text-center font-poppins text-xl max-w-5xl mx-auto">BisectHosting propose un hébergement de serveur simple, rapide et de haute qualité avec plus d'une douzaine d'emplacements disponibles à travers le monde, garantissant une faible latence. Après votre achat, le serveur est déjà configuré et prêt à être utilisé.<br><br>
-            Utilisez le code "<strong class="text-vert">CHROMATECH</strong>"pour obtenir 25% de réduction sur votre premier mois en tant que nouveau client pour l'un de leurs serveurs de jeux.</p>
-            <div class="bouton text-center pt-8 pb-4">
-              <a href="/contact/" target="_blank" class="btn_secondary">Découvrir</a>
-            </div>
-          </li>
+          @foreach($partenaires['list'] as $partenaires_item )
+      			<li class="splide__slide">
+              <img class="mb-3 mx-auto xl:w-96 lg:w-80 md:w-72 w-64" loading="lazy" src="{{ wp_get_attachment_image_src($partenaires_item['partenaires_img'], 'partner')[0] }}" alt="{{ $partenaires_item['title'] }}">
+              <h3 class="text-vert text-center xl:text-3xl lg:text-2xl md:text-xl text-lg font-poppins">{!! $partenaires_item['title'] !!}</h3>
+              <p class="text-white text-center font-poppins xl:text-xl lg:text-lg md:text-base text-sm max-w-5xl mx-auto">{!! $partenaires_item['partenaires_desc'] !!}</p>
+              <div class="bouton text-center pt-8">
+                <a href="{{ $partenaires_item['partenaires_url'] }}" target="_blank" class="btn_secondary">Découvrir</a>
+              </div>
+            </li>
+          @endforeach
     		</ul>
       </div>
     </div>

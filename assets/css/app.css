@@ -10,38 +10,38 @@
   }
 
   .text_vert {
-    @apply text-5xl font-bold text-vert uppercase;
+    @apply xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-bold text-vert uppercase;
   }
 
   .titre_h1 {
-    @apply text-white text-4xl font-poppins;
+    @apply text-white xl:text-4xl lg:text-3xl md:text-2xl text-xl font-poppins;
   }
 
   .titre_h2 {
-    @apply text-primary text-center font-bold text-4xl font-poppins;
+    @apply text-primary text-center font-bold xl:text-4xl lg:text-3xl md:text-2xl text-xl font-poppins;
   }
 
   .text_primary {
-    @apply text-white text-xl font-poppins;
+    @apply text-white xl:text-xl lg:text-lg md:text-base text-sm font-poppins;
   }
 
   .btn_primary {
-    @apply inline-block box-border px-8 py-2 rounded-xl bg-transparent font-poppins hover:bg-primary text-primary text-xl font-semibold border-2 border-primary hover:text-white transition ease-in-out duration-300 focus:outline-none focus:bg-primary focus:text-white;
+    @apply inline-block box-border px-8 py-2 rounded-xl bg-transparent font-poppins hover:bg-primary text-primary xl:text-xl lg:text-lg md:text-base text-sm font-semibold border-2 border-primary hover:text-white transition ease-in-out duration-300 focus:outline-none focus:bg-primary focus:text-white;
   }
 
   .btn_secondary {
-    @apply inline-block box-border px-8 py-2 rounded-xl bg-transparent font-poppins hover:bg-vert text-vert text-xl font-semibold border-2 border-vert hover:text-primary transition ease-in-out duration-300 focus:outline-none focus:bg-vert focus:text-primary;
+    @apply inline-block box-border px-8 py-2 rounded-xl bg-transparent font-poppins hover:bg-vert text-vert xl:text-xl lg:text-lg md:text-base text-sm font-semibold border-2 border-vert hover:text-primary transition ease-in-out duration-300 focus:outline-none focus:bg-vert focus:text-primary;
   }
 
   .btn_discord {
-    @apply inline-block box-border px-8 py-2 rounded-xl bg-transparent font-poppins hover:bg-discord text-discord text-xl font-semibold border-2 border-discord hover:text-white transition ease-in-out duration-300 focus:outline-none focus:bg-discord focus:text-white;
+    @apply inline-block box-border px-8 py-2 rounded-xl bg-transparent font-poppins hover:bg-discord text-discord xl:text-xl lg:text-lg md:text-base text-sm font-semibold border-2 border-discord hover:text-white transition ease-in-out duration-300 focus:outline-none focus:bg-discord focus:text-white;
   }
 
   .btn_youtube {
-    @apply inline-block box-border px-8 py-2 rounded-xl bg-transparent font-poppins hover:bg-youtube text-youtube text-xl font-semibold border-2 border-youtube hover:text-white transition ease-in-out duration-300 focus:outline-none focus:bg-youtube focus:text-white;
+    @apply inline-block box-border px-8 py-2 rounded-xl bg-transparent font-poppins hover:bg-youtube text-youtube xl:text-xl lg:text-lg md:text-base text-sm font-semibold border-2 border-youtube hover:text-white transition ease-in-out duration-300 focus:outline-none focus:bg-youtube focus:text-white;
   }
 
   .btn_twitch {
-    @apply inline-block box-border px-8 py-2 rounded-xl bg-transparent font-poppins hover:bg-twitch text-twitch text-xl font-semibold border-2 border-twitch hover:text-white transition ease-in-out duration-300 focus:outline-none focus:bg-twitch focus:text-white;
+    @apply inline-block box-border px-8 py-2 rounded-xl bg-transparent font-poppins hover:bg-twitch text-twitch xl:text-xl lg:text-lg md:text-base text-sm font-semibold border-2 border-twitch hover:text-white transition ease-in-out duration-300 focus:outline-none focus:bg-twitch focus:text-white;
   }
 }

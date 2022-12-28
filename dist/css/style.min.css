@@ -766,15 +766,14 @@ template {
 
 @font-face {
   font-family: "icomoon";
-  src: url(../fonts/icomoon.eot?82e7774729c5b9243ef0a5146dcb825d);
-  src: url(../fonts/icomoon.eot?82e7774729c5b9243ef0a5146dcb825d) format("embedded-opentype"), url(../fonts/icomoon.ttf?7a1697e3209ed1fb655c807d182e706c) format("truetype"), url(../fonts/icomoon.woff?0f9f316e8ec5bc3a0dab61432d0d8d0e) format("woff"), url(../fonts/icomoon.svg?afe044b804f91ab7247561687c7fe4df) format("svg");
+  src: url(../fonts/icomoon.eot?646a80f5f9b6ad7177d55463e4be6c0a);
+  src: url(../fonts/icomoon.eot?646a80f5f9b6ad7177d55463e4be6c0a) format("embedded-opentype"), url(../fonts/icomoon.ttf?6206394dd6ee1234f2f05a0899fdb1cd) format("truetype"), url(../fonts/icomoon.woff?10792eebf496d6f8da79153640120a3c) format("woff"), url(../fonts/icomoon.svg?d82c927bb92091722c2a8b693c0c8a45) format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^=icon-],
-[class*=" icon-"] {
+i {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   speak: never;
@@ -786,6 +785,74 @@ template {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fan-propellers:before {
+  content: "\E906";
+}
+
+.icon-hdd:before {
+  content: "\E907";
+}
+
+.icon-headphone:before {
+  content: "\E908";
+}
+
+.icon-graphics-card:before {
+  content: "\E909";
+}
+
+.icon-hardware:before {
+  content: "\E90A";
+}
+
+.icon-battery-full:before {
+  content: "\E90B";
+}
+
+.icon-case-data:before {
+  content: "\E90C";
+}
+
+.icon-video-solid:before {
+  content: "\E90D";
+}
+
+.icon-speaker:before {
+  content: "\E90E";
+}
+
+.icon-settings:before {
+  content: "\E90F";
+}
+
+.icon-memory-solid:before {
+  content: "\E910";
+}
+
+.icon-microchip-solid:before {
+  content: "\E911";
+}
+
+.icon-microphone-solid:before {
+  content: "\E912";
+}
+
+.icon-monitor:before {
+  content: "\E913";
+}
+
+.icon-mouse:before {
+  content: "\E914";
+}
+
+.icon-keyboard:before {
+  content: "\E915";
+}
+
+.icon-lamp:before {
+  content: "\E916";
 }
 
 .icon-twitter:before {

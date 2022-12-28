@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?x0nggt');
-  src:  url('../fonts/icomoon.eot?x0nggt#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?x0nggt') format('truetype'),
-    url('../fonts/icomoon.woff?x0nggt') format('woff'),
-    url('../fonts/icomoon.svg?x0nggt#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?8jy98j');
+  src:  url('../fonts/icomoon.eot?8jy98j#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?8jy98j') format('truetype'),
+    url('../fonts/icomoon.woff?8jy98j') format('woff'),
+    url('../fonts/icomoon.svg?8jy98j#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+i {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
@@ -25,6 +25,57 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-fan-propellers:before {
+  content: "\e906";
+}
+.icon-hdd:before {
+  content: "\e907";
+}
+.icon-headphone:before {
+  content: "\e908";
+}
+.icon-graphics-card:before {
+  content: "\e909";
+}
+.icon-hardware:before {
+  content: "\e90a";
+}
+.icon-battery-full:before {
+  content: "\e90b";
+}
+.icon-case-data:before {
+  content: "\e90c";
+}
+.icon-video-solid:before {
+  content: "\e90d";
+}
+.icon-speaker:before {
+  content: "\e90e";
+}
+.icon-settings:before {
+  content: "\e90f";
+}
+.icon-memory-solid:before {
+  content: "\e910";
+}
+.icon-microchip-solid:before {
+  content: "\e911";
+}
+.icon-microphone-solid:before {
+  content: "\e912";
+}
+.icon-monitor:before {
+  content: "\e913";
+}
+.icon-mouse:before {
+  content: "\e914";
+}
+.icon-keyboard:before {
+  content: "\e915";
+}
+.icon-lamp:before {
+  content: "\e916";
+}
 .icon-twitter:before {
   content: "\e900";
 }

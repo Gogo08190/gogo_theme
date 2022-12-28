@@ -29,6 +29,10 @@
     @apply text-white xl:text-xl lg:text-lg md:text-base text-sm font-poppins;
   }
 
+  .text_secondary {
+    @apply text-white xl:text-base lg:text-sm text-xs font-poppins;
+  }
+
   .btn_primary {
     @apply inline-block box-border px-8 py-2 rounded-xl bg-transparent font-poppins hover:bg-primary text-primary xl:text-xl lg:text-lg md:text-base text-sm font-semibold border-2 border-primary hover:text-white transition ease-in-out duration-300 focus:outline-none focus:bg-primary focus:text-white;
   }

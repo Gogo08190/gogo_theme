@@ -14,4 +14,5 @@ return [
   'videos' => [__('Vidéos', THEME_TD), ['page']],
   'about' => [__('About', THEME_TD), ['page']],
   'config' => [__('Config', THEME_TD), ['page']],
+  'actualites' => [__('Actualités', THEME_TD), ['page']],
 ];

@@ -9,3 +9,4 @@
 
 
 Route::get('template', ['home', 'uses' => 'HomeController@index']);
+Route::get('template', ['contact', 'uses' => 'ContactController@index']);

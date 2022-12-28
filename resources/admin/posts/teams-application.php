@@ -9,7 +9,7 @@ PostType::make('teams', 'Team', 'Team')
 ->setArguments([
 	'label'	=>  'Team',
 	'menu_icon' => 'dashicons-groups',
-	'public'        => true,
+	'public'        => false,
 	'rewrite'       => true,
 	'query_var'     => true,
 	'show_ui'		=> true,

@@ -9,7 +9,7 @@ PostType::make('partenaires', 'Partenaires', 'Partenaires')
 ->setArguments([
 	'label'	=>  'Partenaires',
 	'menu_icon' => 'dashicons-networking',
-	'public'        => true,
+	'public'        => false,
 	'rewrite'       => true,
 	'query_var'     => true,
 	'show_ui'		=> true,

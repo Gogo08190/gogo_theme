@@ -9,7 +9,7 @@ PostType::make('playlist', 'Playlist', 'Playlist')
 ->setArguments([
 	'label'	=>  'Playlist',
 	'menu_icon' => 'dashicons-video-alt3',
-	'public'        => true,
+	'public'        => false,
 	'rewrite'       => true,
 	'query_var'     => true,
 	'show_ui'		=> true,

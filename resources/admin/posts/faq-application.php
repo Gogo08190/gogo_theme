@@ -5,10 +5,10 @@ use Themosis\Support\Facades\Metabox;
 use Themosis\Support\Facades\PostType;
 use Themosis\Support\Section;
 
-PostType::make('modpacks', 'Modpacks', 'Modpacks')
+PostType::make('faq', 'FAQ', 'FAQ')
 ->setArguments([
-	'label'	=>  'Modpacks',
-	'menu_icon' => 'dashicons-palmtree',
+	'label'	=>  'FAQ',
+	'menu_icon' => 'dashicons-lightbulb',
 	'public'        => false,
 	'rewrite'       => true,
 	'query_var'     => true,
@@ -21,14 +21,12 @@ PostType::make('modpacks', 'Modpacks', 'Modpacks')
 ])
 ->set();
 
-Metabox::make('modpacks_cp', 'modpacks')
+Metabox::make('faq_cp', 'faq')
     ->setTitle('Informations')
 
-		->add(new Section('modpacks_general', 'Informations générales', [
-			Field::media('modpacks_img', ['label' => 'Image']),
-			Field::text('modpacks_version', ['label' => 'Version']),
-			Field::text('modpacks_url', ['label' => 'URL']),
-			Field::choice('modpacks_cat', ['choices' => ['Quêtes', 'Technologie', 'Magie', 'Exploration', 'Skyblock', 'Expert'], 'multiple' => true]),
+		->add(new Section('faq_general', 'Informations générales', [
+			Field::textarea('faq_question', ['label' => 'Question']),
+			Field::textarea('faq_reponse', ['label' => 'Réponse']),
 		]))
 
     ->addTranslation('done', 'Sauvegarde réussie')

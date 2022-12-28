@@ -21,6 +21,10 @@
     @apply text-primary text-center font-bold xl:text-4xl lg:text-3xl md:text-2xl text-xl font-poppins;
   }
 
+  .titre_h3 {
+    @apply text-primary text-center font-bold xl:text-xl lg:text-lg md:text-base text-sm font-poppins;
+  }
+
   .text_primary {
     @apply text-white xl:text-xl lg:text-lg md:text-base text-sm font-poppins;
   }

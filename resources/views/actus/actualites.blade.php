@@ -16,6 +16,7 @@
 
     <div class="container mx-auto">
       <div class="last_actu pt-16 pb-32">
+        <p class="titre_h2 text-white mb-8">Notre dernière actualité</p>
 				@query(['post_type' => 'post', 'posts_per_page' => 1])
 					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="grid flex mx-auto max-w-screen-xl lg:gap-8 lg:grid-cols-12 rounded-3xl border-2 border-vert transition_primary hover:scale-105">
 						<div class="lg:col-span-6">
@@ -34,7 +35,7 @@
 			</div>
 
 			<div class="all_actu relative">
-				<span class="icon-Groupe-82"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+        <p class="titre_h2 text-white mb-8">Nos autres actualités</p>
 				<div class="grid flex mx-auto max-w-screen-xl gap-16 lg:grid-cols-12 py-8">
 					@query(['post_type' => 'post', 'offset' => 1])
 						<div class="lg:col-span-6 xl:col-span-4">

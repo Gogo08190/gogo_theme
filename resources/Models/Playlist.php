@@ -18,7 +18,7 @@ class Playlist extends Model
             'post_type' => 'playlist',
             'post_status' => 'publish',
             'posts_per_page' => -1,
-            'order' => 'ASC'
+            'order' => 'DESC'
         );
 
         $posts = new WP_Query($args);
@@ -27,7 +27,7 @@ class Playlist extends Model
 
         foreach($posts->get_posts() as $key => $val){
             $id = $val->ID;
-            $partenaires[$id] = [
+            $playlist[$id] = [
                 'title' => $val->post_title,
                 'url' => get_the_permalink($val->ID),
                 'playlist_img' => get_post_meta($id, 'th_playlist_img', true),

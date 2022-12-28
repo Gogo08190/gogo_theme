@@ -25,11 +25,13 @@
     <h2 class="titre_h2">{!! $lp['titre'] !!}</h2>
 
     <div class="grid flex mx-auto gap-8 lg:grid-cols-12 pt-8">
+      @foreach(array_slice($playlist['list'], 0, 4) as $playlist_item )
       <div class="lg:col-span-6 xl:col-span-3">
-        <a href="#" target="_blank">
-          <img src="{{ get_template_directory_uri() }}/dist/images/Ep1.jpg" loading="lazy" alt="{{ bloginfo('name') }}" class="rounded-3xl drop-shadow-xl transition_primary hover:scale-105">
+        <a href="{{ $playlist_item['playlist_url'] }}" target="_blank">
+          <img src="{{ wp_get_attachment_image_src($playlist_item['playlist_img'], 'playlist')[0] }}" loading="lazy" alt="{{ $playlist_item['title'] }}" class="rounded-3xl drop-shadow-xl transition_primary hover:scale-105">
         </a>
       </div>
+      @endforeach
     </div>
 
     <div class="bouton text-center pt-8">

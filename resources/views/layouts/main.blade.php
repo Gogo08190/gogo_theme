@@ -19,6 +19,16 @@
     <meta name="theme-color" content="#ffffff">
 
     @yield('javascriptheader')
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-2PGR7Q2K02"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-2PGR7Q2K02');
+		</script>
 </head>
 
 <body @php(body_class())>

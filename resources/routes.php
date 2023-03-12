@@ -18,4 +18,8 @@ Route::get('template', ['actualites', 'uses' => 'ActualitesController@index']);
 
 Route::get('single', ['uses' => 'ActualitesController@single']);
 
+Route::get('page', function(){
+    return view('pages.template');
+});
+
 Route::get('404', ['uses' => 'ErrorController@index']);

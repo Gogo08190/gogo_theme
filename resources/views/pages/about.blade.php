@@ -30,7 +30,7 @@
       @foreach($faq['list'] as $faq_item )
       <button class="accordion titre_h3">{!! $faq_item['faq_question'] !!}</button>
       <div class="panel xl:text-base lg:text-sm text-xs">
-        <p class="py-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="py-4">{!! $faq_item['faq_reponse'] !!}</p>
       </div>
       @endforeach
     </div>

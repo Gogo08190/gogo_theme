@@ -20,10 +20,13 @@ module.exports = {
           DEFAULT: '#212121'
         },
         primary:{
+          DEFAULT: '#181818'
+        },
+        bleu:{
           DEFAULT: '#130C37'
         },
         secondary:{
-          DEFAULT: '#03B27E'
+          DEFAULT: '#00c895'
         },
         tertiaire:{
           DEFAULT: '#D9EAFF'

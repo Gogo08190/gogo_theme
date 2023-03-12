@@ -10,13 +10,13 @@
     @head
     <script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
 
-    <!-- <link rel="apple-touch-icon" sizes="180x180" href="{{ get_template_directory_uri() }}/dist/img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ get_template_directory_uri() }}/dist/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ get_template_directory_uri() }}/dist/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ get_template_directory_uri() }}/dist/img/favicon/favicon-16x16.png">
     <link rel="manifest" href="{{ get_template_directory_uri() }}/dist/img/favicon/site.webmanifest">
     <link rel="mask-icon" href="{{ get_template_directory_uri() }}/dist/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#fbba00">
-    <meta name="theme-color" content="#ffffff"> -->
+    <meta name="theme-color" content="#ffffff">
 
     @yield('javascriptheader')
 </head>

@@ -5,9 +5,9 @@
           <img loading="lazy" class="mr-3 h-32 rounded-full outline outline-vert transition_primary hover:rotate-45" src="{{ wp_get_attachment_image_src(get_theme_mod('custom_logo'))[0] }}" alt="{{ get_bloginfo('name') }} - {{ get_bloginfo('description') }}">
       </a>
       <div class="hidden lg:flex items-center lg:order-2 pt-8 xl:pt-0">
-          <a href="{!! get_option('th_youtube') !!}" class="btn_youtube py-1 mx-2">Youtube</a>
-          <a href="{!! get_option('th_twitch') !!}" class="btn_twitch py-1 mx-2">Twitch</a>
-          <a href="{!! get_option('th_discord') !!}" class="btn_discord py-1 mx-2">Discord</a>
+          <a href="{!! get_option('th_youtube') !!}" target="_blank" class="btn_youtube py-1 mx-2">Youtube</a>
+          <a href="{!! get_option('th_twitch') !!}" target="_blank" class="btn_twitch py-1 mx-2">Twitch</a>
+          <a href="{!! get_option('th_discord') !!}" target="_blank" class="btn_discord py-1 mx-2">Discord</a>
       </div>
 
       <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1 pt-8 xl:pt-0">

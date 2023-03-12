@@ -6,7 +6,7 @@
 
 @section('content')
 
-<section id="top" class="relative  py-16">
+<section id="top" class="relative py-16">
   <img class="w-full max-h-[32rem] object-cover" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'actu_miniature'); ?>" loading="lazy" alt="<?php the_title(); ?>">
   <div class="container max-w-screen-xl mx-auto pt-8">
     <h1 class="max-w-5xl text-white font-poppins font-black xl:text-4xl lg:text-3xl md:text-2xl text-xl mx-auto text-center">{!! Loop::title() !!}</h1>
@@ -33,7 +33,7 @@
   @endloop
 </div>
 
-<div id="last_actus">
+<div id="last_actus" class="py-8">
   <div class="container mx-auto">
     <div class="titre">
       <p class="titre_h3 text-white">Découvrez nos dernières actualités</p>

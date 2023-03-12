@@ -1225,6 +1225,13 @@ footer .copyright a:hover::after {
   border-radius: 5px;
 }
 
+@media (max-width: 1280px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/

@@ -10,7 +10,7 @@
   <div class="container mx-auto">
     <div class="grid flex mx-auto gap-16 lg:grid-cols-12">
       <div class="lg:col-span-6 my-auto lg:order-1 order-2">
-        <img class="xl:w-full lg:w-4/5 md:w-3/5 w-3/6 mx-auto" src="{{ get_template_directory_uri() }}/dist/images/portrait.png" loading="lazy" alt="{{ bloginfo('name') }}">
+        <img class="xl:w-full lg:w-4/5 md:w-3/5 w-3/6 mx-auto" src="{{ wp_get_attachment_image_src($top['img'], 'portrait')[0] }}" loading="lazy" alt="{{ bloginfo('name') }}">
       </div>
       <div class="lg:col-span-6 my-auto lg:order-2 order-1">
         <h1 class="titre_h1">{!! $top['titre'] !!}</h1>
